@@ -316,6 +316,14 @@
         - MobLayer
   - type: DashAction # Goobstation - dark souls moths
     actionProto: ActionDashMoth
+  - type: Reactive # Goobstation - Pest spray makes bugs scream
+    reactions:
+    - reagents: [ PestKiller ]
+      methods: [ Touch ]
+      effects:
+      - !type:Emote
+        emote: Scream
+        probability: 0.2
 
 - type: entity
   parent: BaseSpeciesDummy
